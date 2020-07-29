@@ -1,11 +1,25 @@
 # Install R
 sudo apt update
 sudo apt install gdebi libxml2-dev libssl-dev libcurl4-openssl-dev libopenblas-dev r-base r-base-dev
+sudo apt-get update && sudo apt-get install -y pandoc  \
+      pandoc-citeproc  \
+      libcurl4-gnutls-dev  \
+      libcairo2-dev  \
+      libxt-dev  \
+      libssl-dev  \
+      libssh2-1-dev  \
+      libssl1.0.0   \
+      libjpeg-dev  \
+      gfortran   \
+      libxml2-dev \ 
+      libmariadb-client-lgpl-dev
+     
+sudo apt-get install libmagick++-dev
+sudo apt-get install gdebi-core
 
 # Install RStudio
-cd ~/Downloads
-wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5001-amd64.deb
-sudo gdebi rstudio-1.2.5001-amd64.deb
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.3.1056-amd64.deb
+sudo gdebi rstudio-server-1.3.1056-amd64.deb
 printf '\nexport QT_STYLE_OVERRIDE=gtk\n' | sudo tee -a ~/.profile
 
 # Install common packages
