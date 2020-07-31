@@ -1,6 +1,6 @@
 # Install R
 sudo apt update
-sudo apt install gdebi libxml2-dev libssl-dev libcurl4-openssl-dev libopenblas-dev r-base r-base-dev
+sudo apt install -y gdebi libxml2-dev libssl-dev libcurl4-openssl-dev libopenblas-dev r-base r-base-dev
 sudo apt-get update && sudo apt-get install -y pandoc  \
       pandoc-citeproc  \
       libcurl4-gnutls-dev  \
@@ -14,8 +14,8 @@ sudo apt-get update && sudo apt-get install -y pandoc  \
       libxml2-dev \ 
       libmariadb-client-lgpl-dev
      
-sudo apt-get install libmagick++-dev
-sudo apt-get install gdebi-core
+sudo apt-get install -y libmagick++-dev
+sudo apt-get install -y gdebi-core
 
 # Install RStudio
 wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.3.1056-amd64.deb
